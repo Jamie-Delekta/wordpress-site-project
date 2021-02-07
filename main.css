@@ -42,7 +42,7 @@ header .content-wrapper {
   align-items: center;
 }
 
-header h1 {
+span.title {
   font-size: 1.25em;
   color: #45ac9d;
   font-family: 'Montserrat', sans-serif;
@@ -172,7 +172,7 @@ article.post-entry {
 aside.right-aside {
   display: flex;
   flex-flow: column wrap;
-  margin: 30px;
+  padding: 30px;
 }
 
 .right-aside figure {
@@ -258,19 +258,91 @@ aside .side-nav-events figure {
 
 /************** Tablet Styles ****************/
 
+/******* Grid *******/
+
+.container {
+  display: flex;
+}
+
+
+/********** Header ***********/
+
+
+header .content-wrapper {
+  align-items: baseline;
+  margin: 20px;
+}
+
+.top-nav {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.top-nav ul {
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
 
 
 
+/************* Post Entries ***************/
+
+article.post-entry {
+  border-right: 1px solid #a6a6a6;
+  border-left: none;
+  border-bottom: none;
+}
 
 
+.post-entry .content-wrapper {
+  align-items: flex-start;
+}
+
+.post-entry h2 {
+  text-align: left;
+}
+
+.post-entry span {
+  font-size: .875em;
+}
+
+.post-entry .quote p {
+  margin-left: 40px;
+  margin-top: 0;
+}
 
 
+/************ Right Aside *************/
+
+aside.right-aside {
+  border-top: 1px solid #a6a6a6;
+}
 
 
+.search-form {
+  display: flex;
+  border-top: 1px solid #a6a6a6;
+  border-bottom: 1px solid #a6a6a6;
+}
+
+.side-nav-cat ul li,
+.side-nav-arch ul li {
+  margin-top: 10px;
+}
+
+aside .side-nav-events figure {
+  width: 100%;
+}
 
 
+/************ Footer **************/
 
-
+.footer-nav {
+  margin: 0 0 10px 0;
+  padding: 20px 10px 10px 10px;
+  border-top: 1px solid #a6a6a6;
+  border-bottom: 1px solid #a6a6a6;
+}
 
 
 
