@@ -31,7 +31,7 @@ figure {
 /*--- Header ---*/
 
 header {
-  border-top: 1px solid #a6a6a6;
+  border-top: 5px solid #45ac9d;
   border-left: 1px solid #a6a6a6;
   border-right: 1px solid #a6a6a6;
 }
@@ -41,6 +41,13 @@ header .content-wrapper {
   flex-flow: column wrap;
   align-items: center;
 }
+
+header .top-author {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
 
 span.title {
   font-size: 1.25em;
@@ -156,7 +163,6 @@ article.post-entry {
 .post-entry .entry-summary p q {
   font-size: 1.125em;
   line-height: 1;
-  font-weight: bold;
   color: #2b2b2b;
 
 }
@@ -235,6 +241,12 @@ aside .side-nav-events figure {
   margin-top: 20px;
 }
 
+.left-side,
+.right-side {
+  text-transform: uppercase;
+}
+
+
 .footer-nav a {
   text-decoration: none;
   color: #150300;
@@ -267,10 +279,17 @@ aside .side-nav-events figure {
 
 /********** Header ***********/
 
+header {
+  border-top: 7px solid #45ac9d;
+}
 
 header .content-wrapper {
   align-items: baseline;
   margin: 20px;
+}
+
+header .top-author {
+  align-items: baseline;
 }
 
 .top-nav {
@@ -344,8 +363,121 @@ aside .side-nav-events figure {
   border-bottom: 1px solid #a6a6a6;
 }
 
+}
+
+/********* End of Tablet Styles **************/
 
 
 
+
+
+@media only screen and (min-width: 1200px) {
+
+/*************************** Desktop Styles ******************************/
+
+
+/*********** Header ************/
+
+
+header .content-wrapper {
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .top-author {
+  display: flex;
+  flex-flow: column;
+  margin-left: 135px;
+  padding-bottom: 45px;
+}
+
+span.title {
+  font-size: 2em;
+  line-height: 2.625;
+}
+
+span.sub-title {
+  font-size: 1.0625em;
+}
+
+header .top-nav {
+  width: 30%;
+  padding-top: 0;
+}
+
+.top-nav ul li a {
+  padding-right: 20px;
+}
+
+
+/************ Post Entries **************/
+
+
+.blog .container {
+  padding-right: 133px;
+}
+
+.posts {
+  padding-left: 115px;
+}
+
+article.post-entry {
+  border-right: none;
+}
+
+.post-entry h4 {
+  font-size:.875em;
+}
+
+.post-entry h2 {
+  font-size: 1.5625em;
+}
+
+.entry-summary {
+}
+
+.entry-summary p {
+  text-align: left;
+}
+
+.post-entry .entry-summary p q {
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+
+/************* Right Aside ******************/
+
+
+aside.right-aside {
+  padding: 50px 0 0 40px;
+  border-left: 1px solid #a6a6a6;
+}
+
+aside h3,
+aside ul {
+  font-size: .875em;
+  font-weight: 600;
+}
+
+
+/************* Footer ***************/
+
+.footer-nav {
+  font-size: .875em;
+  margin: 0 133px 20px 133px;
+  padding-bottom: 20px;
+}
+
+.left-side i {
+  padding-right: 5px;
+}
+
+.right-side i {
+  padding-left: 5px;
+}
 
 }
+
+/************************ End of Desktop Styles ******************************/
